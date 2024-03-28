@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoMdMail, IoMdPhonePortrait } from "react-icons/io";
-import {FaLocationDot} from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { BiLogoLinkedin } from "react-icons/bi";
 
 const Header = () => {
     return (
@@ -25,7 +26,7 @@ const Header = () => {
                     <a href="tel:+34678630197">(+34) 678630197</a>
                 </div>
                 <div className="flex items-center space-x-2">
-                    <FaLocationDot />
+                    <FaLocationDot/>
                     <p>El Masnou, Barcelona (Spain)</p>
                 </div>
             </div>

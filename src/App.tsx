@@ -10,7 +10,7 @@ const App = () => {
         <main className="h-screen flex flex-col w-full h-full">
             <Header />
             <div className="flex flex-row flex-wrap">
-                <div className="w-1/2 flex flex-col w-full">
+                <div className="w-1/2">
                     <Experience/>
                     <Education />
                 </div>
