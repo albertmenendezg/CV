@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaStar} from "react-icons/fa";
+import {FaStar, FaStarHalfAlt} from "react-icons/fa";
 
 
 interface ISkillItem {
@@ -12,9 +12,11 @@ const SkillItem = (props: ISkillItem) => {
 
     const renderStars = () => {
         const stars = [];
-        for (let i = 0; i < 5; i++) {
-            if (i < score) {
+        for (let i = 1; i <= 5; i++) {
+            if (i <= score) {
                 stars.push(<FaStar key={i} />);
+            } else if (i === Math.ceil(score) && !Number.isInteger(score)) {
+                stars.push(<FaStarHalfAlt key={i} />);
             } else {
                 stars.push(<FaStar key={i} className="text-gray-300" />);
             }
@@ -41,10 +43,10 @@ const Skills = () => {
                 <SkillItem name="Php" score={5}/>
                 <SkillItem name="JavaScript" score={5}/>
                 <SkillItem name="TypeScript" score={4}/>
-                <SkillItem name="Java" score={4}/>
+                <SkillItem name="Java" score={3.5}/>
                 <SkillItem name="Symfony" score={5}/>
-                <SkillItem name="Spring Boot" score={4}/>
                 <SkillItem name="NestJs" score={4}/>
+                <SkillItem name="Python" score={3}/>
                 <SkillItem name="MySQL" score={4}/>
                 <SkillItem name="NodeJS" score={4}/>
                 <SkillItem name="CSS" score={3}/>
@@ -52,6 +54,7 @@ const Skills = () => {
                 <SkillItem name="TailwindCSS" score={4}/>
                 <SkillItem name="RabbitMQ" score={4}/>
                 <SkillItem name="Domain-Driven-Design" score={5}/>
+                <SkillItem name="Hexagonal" score={5}/>
                 <SkillItem name="Microservices" score={4}/>
                 <SkillItem name="Linux" score={4}/>
             </div>
