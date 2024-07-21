@@ -43,7 +43,6 @@ const Skills = () => {
                 <SkillItem name="Php" score={5}/>
                 <SkillItem name="JavaScript" score={5}/>
                 <SkillItem name="TypeScript" score={4}/>
-                <SkillItem name="Java" score={2.5}/>
                 <SkillItem name="Symfony" score={5}/>
                 <SkillItem name="NestJs" score={3.5}/>
                 <SkillItem name="Python" score={3}/>
@@ -57,6 +56,8 @@ const Skills = () => {
                 <SkillItem name="Hexagonal" score={5}/>
                 <SkillItem name="Microservices" score={4}/>
                 <SkillItem name="Linux" score={4}/>
+                <SkillItem name="AWS" score={3}/>
+                <SkillItem name="Git" score={4}/>
             </div>
         </div>
     );

@@ -51,7 +51,7 @@ const Experience = () => {
                     endDate="Present"
                     city="Barcelona"
                     description="SaaS that provides a tool for marketing and audiovisuals to be able to analyze people emotions reactions"
-                    tasks={["Fix and develop new features using multiple microservices in Java Spring Boot, Php Symfony and Nodejs ExpressJs", "Render the content in the client side using ReactJS framework with tailwindcss"]}
+                    tasks={["Fix and develop new features using multiple microservices in Php Symfony and Nest Js Typescript frameworks", "Render the content in the client side using ReactJS framework with tailwindcss"]}
                 />
             </div>
         </div>

@@ -22,7 +22,7 @@ const Languages = () => {
                     <LanguageItem name="Spanish" level="Native or Bilingual" />
                 </div>
                 <div className="w-1/2">
-                    <LanguageItem name="English" level="B1 intermediate" />
+                    <LanguageItem name="English" level="B2 intermediate" />
                 </div>
                 <div className="w-1/2">
                     <LanguageItem name="Catalan" level="Native or Bilingual" />
