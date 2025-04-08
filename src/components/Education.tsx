@@ -34,10 +34,10 @@ const Education = () => {
                     endDate="06/2022"
                 />
                 <EducationItem
-                    title="Network Computer Systems Administration"
-                    institution="LinkiaFP"
-                    city="Barcelona"
-                    startDate="02/2024"
+                    title="Devops & Cloud Program"
+                    institution="UNIR"
+                    city="Remote"
+                    startDate="04/2025"
                     endDate="Present"
                 />
             </div>

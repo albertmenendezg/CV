@@ -7,7 +7,7 @@ import Languages from "./components/Languages";
 
 const App = () => {
     return (
-        <main className="h-screen flex flex-col w-full h-full">
+        <main className="h-screen flex flex-col w-full">
             <Header />
             <div className="flex flex-row flex-wrap">
                 <div className="w-1/2">

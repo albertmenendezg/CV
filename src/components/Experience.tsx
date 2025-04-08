@@ -7,10 +7,11 @@ interface IExperienceItem {
     endDate: string,
     city: string,
     description: string,
-    tasks: string[]
+    tasks: string[],
+    technologies: string[],
 }
 const ExperienceItem = (props: IExperienceItem) => {
-    const { role, company, startDate, endDate, city, description, tasks } = props;
+    const { role, company, startDate, endDate, city, description, tasks, technologies } = props;
     return (
         <div className="">
             <h2 className="font-bold text-lg">{role}</h2>
@@ -26,6 +27,15 @@ const ExperienceItem = (props: IExperienceItem) => {
                     <li key={task} className="flex flex-row justify-between text-sm">- {task}</li>
                 ))}
             </ul>
+            <h3 className="text-cyan-700 italic">Technologies</h3>
+            <p>
+                {
+                    technologies.map((t, index) => (
+                    <span key={t}>
+                        {t}{index < technologies.length - 1 ? ', ' : ''}
+                    </span>
+                ))}
+            </p>
         </div>
     );
 }
@@ -33,7 +43,7 @@ const ExperienceItem = (props: IExperienceItem) => {
 const Experience = () => {
     return (
         <div className="pt-10 px-5">
-            <h2 className="text-cyan-700 text-2xl font-bold underline">Work Experience</h2>
+            <h2 className="text-cyan-700 text-2xl font-bold underline">Experience</h2>
             <div className="flex flex-col space-y-4 mt-2">
                 <ExperienceItem
                     role="Fullstack Developer"
@@ -42,16 +52,36 @@ const Experience = () => {
                     endDate="10/2022"
                     city="Barcelona"
                     description="SaaS that provides a tool to be able to teach your employees with courses"
-                    tasks={["Fix and develop new features using Symfony framework"]}
+                    tasks={[
+                        "Maintenance and development of a web application using the Symfony framework",
+                        "Implementation of SOLID principles to ensure clean and maintainable code",
+                        "Development of frontend functionalities with HTML, CSS, and JavaScript with twig templates",
+                        "Use of Docker for creating and managing development environments.",
+                        "Management of relational databases (MySQL)",
+                        "Version control management with Git."
+                    ]}
+                    technologies={["Symfony", "PHP", "JavaScript", "MySQL", "Docker", "Linux", "HTML", "CSS", "Bootstrap", "Git"]}
                 />
                 <ExperienceItem
                     role="Software Developer"
                     company="Feeder The Reaction SaaS"
                     startDate="10/2022"
-                    endDate="Present"
+                    endDate="04/2025"
                     city="Barcelona"
-                    description="SaaS that provides a tool for marketing and audiovisuals to be able to analyze people emotions reactions"
-                    tasks={["Fix and develop new features using multiple microservices in Php Symfony and Nest Js Typescript frameworks", "Render the content in the client side using ReactJS framework with tailwindcss"]}
+                    description="SaaS that provides an AI tool for marketing, audiovisuals and health applications to be able to analyze people emotions reactions"
+                    tasks={[
+                        "Development of API REST into microservices architecture with PHP Symfony and NodeJs with Express & NestJs, communicated with queues with RabbitMQ.",
+                        "Development of client applications with React.js and Tailwind CSS.",
+                        "Migration of api servers, including the upgrade of PHP from version 8 to 8.3 and Node.js version from 16 to 22.",
+                        "Transformation of a monolith to microservices. Implementation of hexagonal architecture and DDD.",
+                        "Configuration and management of relational databases (MySQL) and non-relational databases (MongoDB, Redis).",
+                        "Implementation of unit tests and integration with PHP Unit and Jest.",
+                        "Use of Docker for creating and managing development environments.",
+                        "Version control management with Git.",
+                        "CI/CD with bitbucket pipelines to deploy into AWS services",
+                        "Manage AWS services including its configuration and observability",
+                    ]}
+                    technologies={["Symfony", "PHP", "TypeScript", "JavaScript", "Node.js", "NestJs", "React.js", "Tailwind CSS", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "HTML", "CSS", "Git"]}
                 />
             </div>
         </div>
