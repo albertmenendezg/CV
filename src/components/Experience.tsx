@@ -13,7 +13,7 @@ interface IExperienceItem {
 const ExperienceItem = (props: IExperienceItem) => {
     const { role, company, startDate, endDate, city, description, tasks, technologies } = props;
     return (
-        <div className="">
+        <div>
             <h2 className="font-bold text-lg">{role}</h2>
             <p className="text-lg">{company}</p>
             <div className="flex flex-row justify-between text-sm text-cyan-700 italic">
@@ -46,23 +46,6 @@ const Experience = () => {
             <h2 className="text-cyan-700 text-2xl font-bold underline">Experience</h2>
             <div className="flex flex-col space-y-4 mt-2">
                 <ExperienceItem
-                    role="Fullstack Developer"
-                    company="Foxize"
-                    startDate="09/2021"
-                    endDate="10/2022"
-                    city="Barcelona"
-                    description="SaaS that provides a tool to be able to teach your employees with courses"
-                    tasks={[
-                        "Maintenance and development of a web application using the Symfony framework",
-                        "Implementation of SOLID principles to ensure clean and maintainable code",
-                        "Development of frontend functionalities with HTML, CSS, and JavaScript with twig templates",
-                        "Use of Docker for creating and managing development environments.",
-                        "Management of relational databases (MySQL)",
-                        "Version control management with Git."
-                    ]}
-                    technologies={["Symfony", "PHP", "JavaScript", "MySQL", "Docker", "Linux", "HTML", "CSS", "Bootstrap", "Git"]}
-                />
-                <ExperienceItem
                     role="Software Developer"
                     company="Feeder The Reaction SaaS"
                     startDate="10/2022"
@@ -80,8 +63,27 @@ const Experience = () => {
                         "Version control management with Git.",
                         "CI/CD with bitbucket pipelines to deploy into AWS services",
                         "Manage AWS services including its configuration and observability",
+                        "Use of Swagger/OpenAPI to document the API",
+                        "Design and implementation of authentication and authorization mechanisms using JWT and OAuth2."
                     ]}
                     technologies={["Symfony", "PHP", "TypeScript", "JavaScript", "Node.js", "NestJs", "React.js", "Tailwind CSS", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "HTML", "CSS", "Git"]}
+                />
+                <ExperienceItem
+                    role="Fullstack Developer"
+                    company="Foxize Cloud"
+                    startDate="09/2021"
+                    endDate="10/2022"
+                    city="Barcelona"
+                    description="E-learning SaaS"
+                    tasks={[
+                        "Maintenance and development of a web application using the Symfony framework",
+                        "Implementation of SOLID principles to ensure clean and maintainable code",
+                        "Development of frontend functionalities with HTML, CSS, and JavaScript with twig templates",
+                        "Use of Docker for creating and managing development environments.",
+                        "Management of relational databases (MySQL)",
+                        "Version control management with Git."
+                    ]}
+                    technologies={["Symfony", "PHP", "JavaScript", "MySQL", "Docker", "Linux", "HTML", "CSS", "Bootstrap", "Git"]}
                 />
             </div>
         </div>
