@@ -37,7 +37,7 @@ const SkillItem = (props: ISkillItem) => {
 }
 const Skills = () => {
     return (
-        <div className="pt-10 px-5">
+        <div className="pt-5 px-5">
             <h2 className="text-cyan-700 text-2xl font-bold underline">Skills</h2>
             <div className="flex flex-col mt-2 space-y-1">
                 <SkillItem name="Php" score={5}/>
@@ -46,16 +46,14 @@ const Skills = () => {
                 <SkillItem name="Symfony" score={5}/>
                 <SkillItem name="NodeJS" score={4}/>
                 <SkillItem name="NestJs" score={4}/>
-                <SkillItem name="SpringBoot" score={3.5}/>
+                <SkillItem name="SpringBoot" score={4}/>
                 <SkillItem name="MySQL" score={4}/>
                 <SkillItem name="MongoDB" score={3}/>
                 <SkillItem name="Redis" score={4}/>
-                <SkillItem name="CSS" score={3}/>
                 <SkillItem name="ReactJS" score={4}/>
                 <SkillItem name="TailwindCSS" score={4}/>
                 <SkillItem name="RabbitMQ" score={4}/>
                 <SkillItem name="Domain-Driven-Design" score={4.5}/>
-                <SkillItem name="Hexagonal" score={4.5}/>
                 <SkillItem name="Microservices" score={4}/>
                 <SkillItem name="Linux" score={4}/>
                 <SkillItem name="Docker" score={4.5}/>

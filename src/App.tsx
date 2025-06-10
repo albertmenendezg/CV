@@ -10,14 +10,10 @@ const App = () => {
         <main className="h-screen flex flex-col w-full">
             <Header />
             <div className="flex flex-row flex-wrap">
-                <div className="w-1/2">
-                    <Experience/>
-                    <Education />
-                </div>
-                <div className="w-1/2">
-                    <Skills/>
-                    <Languages />
-                </div>
+                <Experience/>
+                <Education />
+                <Skills/>
+                <Languages />
             </div>
         </main>
     );

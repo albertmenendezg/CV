@@ -42,7 +42,7 @@ const ExperienceItem = (props: IExperienceItem) => {
 
 const Experience = () => {
     return (
-        <div className="pt-10 px-5">
+        <div className="pt-5 px-5">
             <h2 className="text-cyan-700 text-2xl font-bold underline">Experience</h2>
             <div className="flex flex-col space-y-4 mt-2">
                 <ExperienceItem
@@ -53,12 +53,11 @@ const Experience = () => {
                     city="Barcelona"
                     description="SaaS that provides an AI tool for marketing, audiovisuals and health applications to be able to analyze people emotions reactions"
                     tasks={[
-                        "Development of API REST into microservices architecture with PHP Symfony and NodeJs with Express & NestJs, communicated with queues with RabbitMQ.",
+                        "Development of API REST into microservices architecture with Java Spring Boot and NodeJs with Express & NestJs, communicated with queues with RabbitMQ.",
                         "Development of client applications with React.js and Tailwind CSS.",
-                        "Migration of api servers, including the upgrade of PHP from version 8 to 8.3 and Node.js version from 16 to 22.",
                         "Transformation of a monolith to microservices. Implementation of hexagonal architecture and DDD.",
                         "Configuration and management of relational databases (MySQL) and non-relational databases (MongoDB, Redis).",
-                        "Implementation of unit tests and integration with PHP Unit and Jest.",
+                        "Implementation of unit tests and integration with Junit and Jest.",
                         "Use of Docker for creating and managing development environments.",
                         "Version control management with Git.",
                         "CI/CD with bitbucket pipelines to deploy into AWS services",
@@ -66,7 +65,7 @@ const Experience = () => {
                         "Use of Swagger/OpenAPI to document the API",
                         "Design and implementation of authentication and authorization mechanisms using JWT and OAuth2."
                     ]}
-                    technologies={["Symfony", "PHP", "TypeScript", "JavaScript", "Node.js", "NestJs", "React.js", "Tailwind CSS", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "HTML", "CSS", "Git"]}
+                    technologies={["Spring Boot", "Java", "TypeScript", "Node.js", "NestJs", "React.js", "Tailwind CSS", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "HTML", "CSS", "Git"]}
                 />
                 <ExperienceItem
                     role="Fullstack Developer"
