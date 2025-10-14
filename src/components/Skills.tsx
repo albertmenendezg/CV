@@ -57,6 +57,7 @@ const Skills = () => {
                 <SkillItem name="Microservices" score={4}/>
                 <SkillItem name="Linux" score={4}/>
                 <SkillItem name="Docker" score={4.5}/>
+                <SkillItem name="Kubernetes" score={3.5} />
                 <SkillItem name="AWS" score={4}/>
                 <SkillItem name="Git" score={4}/>
             </div>

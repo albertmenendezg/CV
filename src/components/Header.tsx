@@ -8,7 +8,7 @@ const Header = () => {
             <div className="flex flex-row bg-gray-800 text-white p-10">
                 <div className="w-2/3">
                     <h1 className="text-xl font-semibold">Albert Menéndez González</h1>
-                    <h2 className="text-md text-cyan-700">Fullstack Developer</h2>
+                    <h2 className="text-md text-cyan-700">Backend & Cloud Engineer</h2>
                     <h2 className="text-md">Web technology enthusiast learning new technologies every day to implement them</h2>
                 </div>
                 <div className="w-1/2 flex justify-end">
