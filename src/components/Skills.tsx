@@ -52,7 +52,7 @@ const Skills = () => {
                 <SkillItem name="Redis" score={4} />
                 <SkillItem name="ReactJS" score={4} />
                 <SkillItem name="TailwindCSS" score={4} />
-                <SkillItem name="RabbitMQ" score={4} />
+                <SkillItem name="RabbitMQ" score={3} />
                 <SkillItem name="Domain-Driven-Design" score={4.5} />
                 <SkillItem name="Hexagonal Architecture" score={4.5} />
                 <SkillItem name="Microservices" score={4} />
