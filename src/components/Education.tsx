@@ -47,19 +47,18 @@ const EducationItem = (props: IEducationItem) => {
 
 const Education = () => {
     return (
-        <div className="pt-5 px-5">
+        <div>
             <h2 className="text-cyan-700 text-2xl font-bold underline">Education</h2>
             <div className="flex flex-col pt-2 gap-4">
                 <EducationItem
                     title="Multiplatform Application Development"
                     institution="DigitechFp"
                     description="Program focused on developing and acquiring knowledge of multiplatform applications using modern technologies, including mobile apps, CRM & ERP systems, business applications, and frontend & backend web development."
-                    technologies={["Java", "Android", "Kotlin", "JavaScript", "TypeScript", "HTML", "CSS", "Python", "MySql"]}
+                    technologies={["Java", "Android", "Kotlin", "JavaScript", "TypeScript", "HTML", "CSS", "Python", "MySql", "SpringBoot"]}
                     city="Remotely"
                     startDate={new Date("2025-10-01")}
                     endDate="Present"
                 />
-                <div className="h-14"></div>
                 <EducationItem
                     title="Devops & Cloud Program"
                     institution="UNIR"
@@ -71,7 +70,7 @@ const Education = () => {
                 <EducationItem
                     title="Web Application Development"
                     institution="Stucom"
-                    description="During the program, I acquired solid knowledge of programming languages such as Java, JavaScript, and PHP, as well as the use of technologies and tools such as Git, MySQL, MongoDB, HTML, CSS, and the Symfony framework. I was able to develop comprehensive client and server-side applications, with a focus on good programming practices, version control, and relational and non-relational database management."
+                    description="During the program I acquired solid knowledge of programming languages such as Java, JavaScript, and PHP, as well as the use of technologies and tools such as Git, MySQL, MongoDB, HTML, CSS, and the Symfony framework. I was able to develop comprehensive client and server-side applications, with a focus on good programming practices, version control, and relational and non-relational database management."
                     technologies={["Java", "JavaScript", "TypeScript", "Php", "Git", "MySql", "MongoDB", "HTML", "CSS", "Symfony"]}
                     city="Barcelona"
                     startDate={new Date("2020-09-01")}

@@ -15,7 +15,7 @@ const LanguageItem = (props: ILanguageItem) => {
 }
 const Languages = () => {
     return (
-        <div className="pt-5 px-5">
+        <div>
             <h2 className="text-cyan-700 text-2xl font-bold underline">Languages</h2>
             <div className="flex flex-row flex-wrap pt-2">
                 <div className="w-1/2">

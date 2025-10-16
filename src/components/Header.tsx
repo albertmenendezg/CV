@@ -9,10 +9,10 @@ const Header = () => {
                 <div className="w-2/3">
                     <h1 className="text-xl font-semibold">Albert Menéndez González</h1>
                     <h2 className="text-md text-cyan-700">Backend & Cloud Engineer</h2>
-                    <h2 className="text-md">Web technology enthusiast learning new technologies every day to implement them</h2>
+                    <h2 className="text-md">Technology enthusiast learning new technologies every day to implement them</h2>
                 </div>
                 <div className="w-1/2 flex justify-end">
-                    <img src="img_recortada.jpg" alt="Albert Menéndez González" width="150" height="auto" className="rounded-full" />
+                    <img src="profile_photo.jpg" alt="Albert Menéndez González" width="150" height="auto" className="rounded-full" />
                 </div>
             </div>
             <div className="bg-gray-700 text-white flex items-center justify-center space-x-12 py-2">

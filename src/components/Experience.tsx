@@ -8,10 +8,10 @@ interface IExperienceItem {
     city: string,
     description: string,
     tasks: string[],
-    technologies: string[],
+    techStack: string[],
 }
 const ExperienceItem = (props: IExperienceItem) => {
-    const { role, company, startDate, endDate, city, description, tasks, technologies } = props;
+    const { role, company, startDate, endDate, city, description, tasks, techStack } = props;
 
     const formatedDate = (date: Date | "Present") => {
         if (date === "Present") return "Present";
@@ -38,12 +38,12 @@ const ExperienceItem = (props: IExperienceItem) => {
                     <li key={task} className="flex flex-row justify-between text-sm">- {task}</li>
                 ))}
             </ul>
-            <h3 className="text-cyan-700 italic">Technologies</h3>
+            <h3 className="text-cyan-700 italic">Tech Stack</h3>
             <p>
                 {
-                    technologies.map((t, index) => (
+                    techStack.map((t, index) => (
                     <span key={t}>
-                        {t}{index < technologies.length - 1 ? ', ' : ''}
+                        {t}{index < techStack.length - 1 ? ', ' : ''}
                     </span>
                 ))}
             </p>
@@ -53,7 +53,7 @@ const ExperienceItem = (props: IExperienceItem) => {
 
 const Experience = () => {
     return (
-        <div className="pt-5 px-5">
+        <div>
             <h2 className="text-cyan-700 text-2xl font-bold underline">Experience</h2>
             <div className="flex flex-col space-y-4 mt-2 gap-4">
                 <ExperienceItem
@@ -72,7 +72,7 @@ const Experience = () => {
                         "Integrate with CI/CD pipelines in GitLab",
                         "Implement the infrastructure with AWS services such as EKS, ECR, Fargate, AmazonMQ"
                     ]}
-                    technologies={["Java", "SpringBoot", "RabbitMQ", "Docker", "Kubernetes", "MiniKube", "AWS", "Python", "Git", "GitLab"]}
+                    techStack={["Java", "SpringBoot", "RabbitMQ", "Docker", "Kubernetes", "MiniKube", "AWS", "Python", "Git", "GitLab"]}
                 />
                 <ExperienceItem
                     role="Backend Developer"
@@ -92,7 +92,7 @@ const Experience = () => {
                         "Participate in daily stand-up meetings to discuss progress, blockers, and next steps.",
                         "Track tasks and manage workflows using Jira."
                     ]}
-                    technologies={["Php", "Symfony", "Doctrine", "Twig", "Oracle", "REST", "SOAP", "ActiveMQ", "SQL", "Git", "GitLab"]}
+                    techStack={["Php", "Symfony", "Doctrine", "Twig", "Oracle", "REST", "SOAP", "ActiveMQ", "SQL", "Git", "GitLab"]}
                 />
                 <ExperienceItem
                     role="Backend Developer"
@@ -114,7 +114,7 @@ const Experience = () => {
                         "Use of Swagger/OpenAPI to document the API",
                         "Track tasks and manage workflows using Trello."
                     ]}
-                    technologies={["Spring Boot", "Java", "TypeScript", "Node.js", "NestJs", "React.js", "Tailwind CSS", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "HTML", "CSS", "Git", "BitBucket"]}
+                    techStack={["Spring Boot", "Java", "TypeScript", "Node.js", "NestJs", "React.js", "Tailwind CSS", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "HTML", "CSS", "Git", "BitBucket"]}
                 />
                 <ExperienceItem
                     role="Fullstack Developer"
@@ -133,7 +133,7 @@ const Experience = () => {
                         "Participate in daily stand-up meetings to discuss progress, blockers, and next steps.",
                         "Track tasks and manage workflows using Jira."
                     ]}
-                    technologies={["Symfony", "PHP", "JavaScript", "MySQL", "Docker", "Linux", "HTML", "CSS", "Bootstrap", "Git", "GitLab"]}
+                    techStack={["Symfony", "PHP", "JavaScript", "MySQL", "Docker", "Linux", "HTML", "CSS", "Bootstrap", "Git", "GitLab"]}
                 />
             </div>
         </div>
