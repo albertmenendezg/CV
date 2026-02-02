@@ -1,66 +1,33 @@
-import React from 'react';
-import {FaStar, FaStarHalfAlt} from "react-icons/fa";
-
-
-interface ISkillItem {
-    name: string,
-    score: number
+interface ISkillCategory {
+    category: string;
+    skills: string[];
 }
 
-const SkillItem = (props: ISkillItem) => {
-    const { name, score } = props;
+const skillCategories: ISkillCategory[] = [
+    { category: "Backend", skills: ["Java", "SpringBoot", "Typescript", "NodeJS", "NestJs"] },
+    { category: "DevOps / Cloud", skills: ["Docker", "Kubernetes", "AWS", "Linux", "Terraform", "RabbitMQ"] },
+    { category: "Frontend", skills: ["ReactJS", "NextJS", "TailwindCSS"] },
+    { category: "Architecture / Design", skills: ["Domain-Driven Design", "Hexagonal Architecture", "Microservices"] },
+    { category: "Databases", skills: ["SQL", "MySQL", "PostgresSql", "MongoDB", "Redis"] },
+    { category: "Testing", skills: ["JUnit", "Jest", "Mockito", "Cucumber", "Postman", "Swagger"] },
+    { category: "Tools", skills: ["Git", "GitLab", "Bitbucket", "Grafana", "Jira", "Trello"] },
+];
 
-    const renderStars = () => {
-        const stars = [];
-        for (let i = 1; i <= 5; i++) {
-            if (i <= score) {
-                stars.push(<FaStar key={i} />);
-            } else if (i === Math.ceil(score) && !Number.isInteger(score)) {
-                stars.push(<FaStarHalfAlt key={i} />);
-            } else {
-                stars.push(<FaStar key={i} className="text-gray-300" />);
-            }
-        }
-        return stars;
-    };
-
-    return (
-        <div className="flex flex-row">
-            <div className="w-1/2">
-                <h2>{name}</h2>
-            </div>
-            <div className="w-1/2 flex flex-row space-x-3">
-                {renderStars()}
-            </div>
-        </div>
-    );
-}
 const Skills = () => {
     return (
         <div>
             <h2 className="text-cyan-700 text-2xl font-bold underline">Skills</h2>
-            <div className="flex flex-col mt-2 space-y-1">
-                <SkillItem name="TypeScript" score={5} />
-                <SkillItem name="Java" score={4.5} />
-                <SkillItem name="Python" score={3} />
-                <SkillItem name="NodeJS" score={4} />
-                <SkillItem name="NestJs" score={4} />
-                <SkillItem name="SpringBoot" score={4} />
-                <SkillItem name="SQL" score={4} />
-                <SkillItem name="MySQL" score={4} />
-                <SkillItem name="MongoDB" score={3} />
-                <SkillItem name="Redis" score={4} />
-                <SkillItem name="ReactJS" score={4} />
-                <SkillItem name="TailwindCSS" score={4} />
-                <SkillItem name="RabbitMQ" score={3} />
-                <SkillItem name="Domain-Driven-Design" score={4.5} />
-                <SkillItem name="Hexagonal Architecture" score={4.5} />
-                <SkillItem name="Microservices" score={4} />
-                <SkillItem name="Linux" score={4} />
-                <SkillItem name="Docker" score={4.5} />
-                <SkillItem name="Kubernetes" score={3.5} />
-                <SkillItem name="AWS" score={4} />
-                <SkillItem name="Git" score={4} />
+            <div className="flex flex-col mt-2">
+                {
+                    skillCategories.map((cat) => (
+                        <div key={cat.category}>
+                            <span className="font-semibold text-lg">{cat.category}: </span>
+                            <span>
+                              {cat.skills.join(', ')}.
+                            </span>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     );
