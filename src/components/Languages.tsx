@@ -20,7 +20,7 @@ const Languages = () => {
             <div className="flex flex-col flex-wrap pt-2">
                 <LanguageItem name="Spanish" level="Native" />
                 <LanguageItem name="Catalan" level="Native" />
-                <LanguageItem name="English" level="B2" />
+                <LanguageItem name="English" level="B2 - Professional" />
             </div>
         </div>
     );

@@ -67,7 +67,7 @@ const Experience = () => {
                         "Designed and managed relational and non-relational databases (MySQL, PostgresSql, MongoDb, Redis).",
                         "Implemented CI/CD pipelines and deployed cloud infrastructure on AWS."
                     ]}
-                    techStack={["Spring Boot", "Java", "TypeScript", "Node.js", "NestJs", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "Git", "BitBucket"]}
+                    techStack={["Spring Boot", "Java", "TypeScript", "Node.js", "NestJs", "Python", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "Git", "BitBucket"]}
                 />
                 <ExperienceItem
                     role="Fullstack Developer"

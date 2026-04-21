@@ -4,13 +4,13 @@ interface ISkillCategory {
 }
 
 const skillCategories: ISkillCategory[] = [
-    { category: "Backend", skills: ["Java", "SpringBoot", "Typescript", "NodeJS", "NestJs"] },
-    { category: "DevOps / Cloud", skills: ["Docker", "Kubernetes", "AWS", "Linux", "Terraform", "RabbitMQ"] },
+    { category: "Backend", skills: ["Java", "SpringBoot", "Typescript", "NodeJS", "NestJs", "Python", "Go", "Php"] },
+    { category: "DevOps / Cloud", skills: ["Docker", "Kubernetes", "AWS", "Linux", "Terraform", "RabbitMQ", "Kafka"] },
     { category: "Frontend", skills: ["ReactJS", "NextJS", "TailwindCSS"] },
-    { category: "Architecture / Design", skills: ["Domain-Driven Design", "Hexagonal Architecture", "Microservices"] },
+    { category: "Architecture / Design", skills: ["Domain Driven Design", "Hexagonal Architecture", "Microservices"] },
     { category: "Databases", skills: ["SQL", "MySQL", "PostgresSql", "MongoDB", "Redis"] },
     { category: "Testing", skills: ["JUnit", "Jest", "Mockito", "Cucumber", "Postman", "Swagger"] },
-    { category: "Tools", skills: ["Git", "GitLab", "Bitbucket", "Grafana", "Jira", "Trello"] },
+    { category: "Tools", skills: ["Git", "GitLab", "GitHub", "Bitbucket", "Grafana", "Jira", "Trello"] },
 ];
 
 const Skills = () => {
