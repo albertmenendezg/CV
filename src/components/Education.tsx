@@ -32,7 +32,7 @@ const Education = () => {
                     title="Multiplatform Application Development"
                     institution="DigitechFp"
                     startDate={new Date("2025-10-01")}
-                    endDate="Present"
+                    endDate={new Date("2026-06-01")}
                 />
                 <EducationItem
                     title="Devops & Cloud Program"
