@@ -11,11 +11,11 @@ const EducationItem = (props: IEducationItem) => {
     const { title, institution, startDate, endDate } = props;
 
     return (
-        <div>
-            <h2 className="text-xl font-bold">{title}</h2>
+        <div className="mb-3">
+            <h3 className="font-bold text-base">{title}</h3>
             <div className="flex flex-row justify-between items-center">
-                <h2 className="text-lg">{institution}</h2>
-                <div className="flex flex-row justify-between text-cyan-700">
+                <h2 className="text-gray-700 text-sm">{institution}</h2>
+                <div className="text-primary text-xs">
                     <p>{formatDate(startDate)} - {formatDate(endDate)}</p>
                 </div>
             </div>
@@ -26,8 +26,8 @@ const EducationItem = (props: IEducationItem) => {
 const Education = () => {
     return (
         <div>
-            <h2 className="text-cyan-700 text-2xl font-bold underline">Education</h2>
-            <div className="flex flex-col pt-2 space-y-2">
+            <h2 className="text-xl font-bold pt-4 mb-4">Education</h2>
+            <div className="flex flex-col">
                 <EducationItem
                     title="Multiplatform Application Development"
                     institution="DigitechFp"
