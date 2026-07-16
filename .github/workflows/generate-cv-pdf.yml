@@ -4,6 +4,10 @@ on:
   push:
     branches: [master]
 
+
+env:
+  PDF_NAME: AlbertMenendezCV.pdf
+
 jobs:
   generate-pdf:
     runs-on: ubuntu-latest
@@ -28,7 +32,7 @@ jobs:
         run: npm install puppeteer serve
 
       - name: Generate PDF
-        run: node scripts/generate-pdf.js
+        run: node scripts/generate-pdf.js $PDF_NAME
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -39,7 +43,7 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync AlbertMenendezCV.pdf s3://${{ secrets.S3_BUCKET_NAME }} --delete
+          aws s3 sync output/ s3://${{ secrets.S3_BUCKET_NAME }}/ --delete
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
