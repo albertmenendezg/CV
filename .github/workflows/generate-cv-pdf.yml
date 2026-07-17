@@ -22,9 +22,9 @@ jobs:
         run: npm ci
 
       - name: Build React app (EN)
-        run: REACT_APP_LANG=en npm run build
+        run: npm run build
         env:
-          REACT_APP_LANG: en
+          VITE_LANG: en
 
       - name: Install Puppeteer and serve
         run: npm install puppeteer serve

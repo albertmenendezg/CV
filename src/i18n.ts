@@ -10,7 +10,7 @@ const getInitialLanguage = (): string => {
         return langParam;
     }
     
-    const envLang = process.env.REACT_APP_LANG;
+    const envLang = import.meta.env.VITE_LANG;
     if (envLang && (envLang === 'en' || envLang === 'es')) {
         return envLang;
     }

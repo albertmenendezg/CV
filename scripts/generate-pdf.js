@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 const PORT = 3456;
-const BUILD_DIR = path.join(__dirname, '..', 'build');
+const BUILD_DIR = path.join(__dirname, '..', 'dist');
 const OUTPUT_DIR = path.join(__dirname, '..', 'output');
 
 async function generatePDFForLang(lang, fileName) {
@@ -14,7 +14,7 @@ async function generatePDFForLang(lang, fileName) {
     try {
         server = spawn('npx', ['serve', '-s', BUILD_DIR, '-l', PORT], {
             stdio: 'ignore',
-            env: { ...process.env, REACT_APP_LANG: lang }
+            env: { ...process.env, VITE_LANG: lang }
         });
 
         await new Promise((resolve) => setTimeout(resolve, 2000));
