@@ -13,15 +13,15 @@ const ExperienceItem = (props: IExperienceItem) => {
     const { role, company, startDate, endDate, tasks, techStack } = props;
 
     return (
-        <div className="mb-4">
+        <div className="mb-2">
             <h3 className="font-bold text-base">{role}</h3>
             <div className="flex flex-row justify-between items-center mb-2">
-                <p className="text-gray-700 text-sm">{company}</p>
+                <p className="text-primary text-sm">{company}</p>
                 <p className="text-primary text-xs">{formatDate(startDate)} - {formatDate(endDate)}</p>
             </div>
             <ul className="list-disc ml-4 mb-2">
                 {tasks.map(task => (
-                    <li key={task} className="text-sm text-gray-600 mb-1">{task}</li>
+                    <li key={task} className="text-sm text-primary mb-1">{task}</li>
                 ))}
             </ul>
             <p className="text-primary text-xs font-semibold">Tech Stack: {techStack.join(', ')}</p>
@@ -32,7 +32,7 @@ const ExperienceItem = (props: IExperienceItem) => {
 const Experience = () => {
     return (
         <div>
-            <h2 className="text-xl font-bold pt-4 mb-4">Experience</h2>
+            <h2 className="text-xl font-bold mb-1">Experience</h2>
             <div className="flex flex-col">
                 <ExperienceItem
                     role="Backend Engineer"

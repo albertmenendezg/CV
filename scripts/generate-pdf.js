@@ -36,6 +36,7 @@ async function generatePDF() {
         await page.pdf({
             path: OUTPUT_PDF,
             format: 'A4',
+            scale: 1,
             printBackground: true,
             margin: {
                 top: '0',
