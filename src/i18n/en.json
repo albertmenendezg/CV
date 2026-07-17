@@ -1,0 +1,77 @@
+{
+  "header": {
+    "title": "Albert Menéndez González",
+    "subtitle": "Senior Backend and Cloud Engineer",
+    "description": "Focused on building reliable, secure and scalable and product-fit solutions"
+  },
+  "contact": {
+    "title": "Contact",
+    "location": "Barcelona, Spain"
+  },
+  "experience": {
+    "title": "Experience",
+    "techStack": "Tech Stack",
+    "present": "Present",
+    "roles": {
+      "backendEngineer": "Backend Engineer",
+      "backendDeveloper": "Backend Developer",
+      "fullstackDeveloper": "Fullstack Developer"
+    },
+    "tasks": {
+      "nter1": "Designed and developed a scalable system to automatically validate code submissions, reducing manual correction time.",
+      "nter2": "Built backend microservices using Java Spring Boot with asynchronous communication via RabbitMQ.",
+      "nter3": "Orchestration of containerized applications using Docker and Kubernetes",
+      "nter4": "Integrated CI/CD pipelines (GitLab) and automated infrastructure on AWS.",
+      "feeder1": "Developed and maintained REST APIs in a microservices architecture using Spring Boot and NestJs communicated with RabbitMQ.",
+      "feeder2": "Migration from monolith to microservices, applying Hexagonal Architecture and DDD.",
+      "feeder3": "Designed and managed relational and non-relational databases (MySQL, PostgresSql, MongoDb, Redis).",
+      "feeder4": "Implemented CI/CD pipelines and deployed cloud infrastructure on AWS.",
+      "foxize1": "Developed and maintained a SaaS e-learning platform using Symfony (PHP).",
+      "foxize2": "Applied SOLID principles and improved code maintainability.",
+      "foxize3": "Development of frontend functionalities with HTML, CSS, and JavaScript with twig templates"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "degrees": {
+      "multiplatform": "Multiplatform Application Development",
+      "devops": "Devops & Cloud Program",
+      "web": "Web Application Development"
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "spanish": "Spanish",
+    "catalan": "Catalan",
+    "english": "English",
+    "native": "Native",
+    "professional": "B2 - Professional"
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "backend": "Backend",
+      "devops": "DevOps / Cloud",
+      "ai": "AI",
+      "frontend": "Frontend",
+      "architecture": "Architecture / Design",
+      "databases": "Databases",
+      "testing": "Testing",
+      "tools": "Tools"
+    }
+  },
+  "months": {
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec"
+  }
+}

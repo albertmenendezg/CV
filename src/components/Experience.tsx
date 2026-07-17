@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {formatDate} from "../utils/format-date";
 
 interface IExperienceItem {
@@ -10,6 +11,7 @@ interface IExperienceItem {
     techStack: string[],
 }
 const ExperienceItem = (props: IExperienceItem) => {
+    const { t } = useTranslation();
     const { role, company, startDate, endDate, tasks, techStack } = props;
 
     return (
@@ -24,51 +26,53 @@ const ExperienceItem = (props: IExperienceItem) => {
                     <li key={task} className="text-sm text-primary mb-1">{task}</li>
                 ))}
             </ul>
-            <p className="text-primary text-xs font-semibold">Tech Stack: {techStack.join(', ')}</p>
+            <p className="text-primary text-xs font-semibold">{t('experience.techStack')}: {techStack.join(', ')}</p>
         </div>
     );
 }
 
 const Experience = () => {
+    const { t } = useTranslation();
+    
     return (
         <div>
-            <h2 className="text-xl font-bold mb-1">Experience</h2>
+            <h2 className="text-xl font-bold mb-1">{t('experience.title')}</h2>
             <div className="flex flex-col">
                 <ExperienceItem
-                    role="Backend Engineer"
+                    role={t('experience.roles.backendEngineer')}
                     company="Nter Tech Services"
                     startDate={new Date("2025-05-22")}
                     endDate="Present"
                     tasks={[
-                        "Designed and developed a scalable system to automatically validate code submissions, reducing manual correction time.",
-                        "Built backend microservices using Java Spring Boot with asynchronous communication via RabbitMQ.",
-                        "Orchestration of containerized applications using Docker and Kubernetes",
-                        "Integrated CI/CD pipelines (GitLab) and automated infrastructure on AWS.",
+                        t('experience.tasks.nter1'),
+                        t('experience.tasks.nter2'),
+                        t('experience.tasks.nter3'),
+                        t('experience.tasks.nter4'),
                     ]}
                     techStack={["Java", "SpringBoot", "RabbitMQ", "Docker", "Kubernetes", "MiniKube", "AWS", "Python", "Git", "GitLab"]}
                 />
                 <ExperienceItem
-                    role="Backend Developer"
+                    role={t('experience.roles.backendDeveloper')}
                     company="Feeder The Reaction SaaS"
                     startDate={new Date("2022-10-11")}
                     endDate={new Date("2025-04-01")}
                     tasks={[
-                        "Developed and maintained REST APIs in a microservices architecture using Spring Boot and NestJs communicated with RabbitMQ.",
-                        "Migration from monolith to microservices, applying Hexagonal Architecture and DDD.",
-                        "Designed and managed relational and non-relational databases (MySQL, PostgresSql, MongoDb, Redis).",
-                        "Implemented CI/CD pipelines and deployed cloud infrastructure on AWS."
+                        t('experience.tasks.feeder1'),
+                        t('experience.tasks.feeder2'),
+                        t('experience.tasks.feeder3'),
+                        t('experience.tasks.feeder4'),
                     ]}
                     techStack={["Spring Boot", "Java", "TypeScript", "Node.js", "NestJs", "Python", "RabbitMQ", "MySQL", "MongoDB", "Redis", "Docker", "Linux", "AWS", "Git", "BitBucket"]}
                 />
                 <ExperienceItem
-                    role="Fullstack Developer"
+                    role={t('experience.roles.fullstackDeveloper')}
                     company="Foxize Cloud"
                     startDate={new Date("2021-09-01")}
                     endDate={new Date("2022-10-10")}
                     tasks={[
-                        "Developed and maintained a SaaS e-learning platform using Symfony (PHP).",
-                        "Applied SOLID principles and improved code maintainability.",
-                        "Development of frontend functionalities with HTML, CSS, and JavaScript with twig templates",
+                        t('experience.tasks.foxize1'),
+                        t('experience.tasks.foxize2'),
+                        t('experience.tasks.foxize3'),
                     ]}
                     techStack={["Symfony", "PHP", "Twig", "JavaScript", "MySQL", "Docker", "Linux", "HTML", "CSS", "Bootstrap", "Git", "GitLab"]}
                 />

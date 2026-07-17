@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Header from "./components/Header";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
@@ -8,6 +9,8 @@ import { IoMdMail, IoMdPhonePortrait } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
 const App = () => {
+    const { t } = useTranslation();
+    
     return (
         <main className="min-h-screen w-full flex">
             <aside className="w-1/3 bg-secondary text-white p-4">
@@ -16,7 +19,7 @@ const App = () => {
                 </div>
                 
                 <div className="mb-4">
-                    <h3 className="text-lg font-bold mb-3 uppercase tracking-wider">Contact</h3>
+                    <h3 className="text-lg font-bold mb-3 uppercase tracking-wider">{t('contact.title')}</h3>
                     <div className="space-y-2 text-sm">
                         <div className="flex items-center space-x-3">
                             <IoMdMail className="text-gray-300"/>
@@ -28,7 +31,7 @@ const App = () => {
                         </div>
                         <div className="flex items-center space-x-3">
                             <FaLocationDot className="text-gray-300"/>
-                            <p>Barcelona, Spain</p>
+                            <p>{t('contact.location')}</p>
                         </div>
                     </div>
                 </div>

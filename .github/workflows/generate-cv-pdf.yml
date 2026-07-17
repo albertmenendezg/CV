@@ -4,10 +4,6 @@ on:
   push:
     branches: [master]
 
-
-env:
-  PDF_NAME: AlbertMenendezCV.pdf
-
 jobs:
   generate-pdf:
     runs-on: ubuntu-latest
@@ -25,14 +21,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build React app
-        run: npm run build
+      - name: Build React app (EN)
+        run: REACT_APP_LANG=en npm run build
+        env:
+          REACT_APP_LANG: en
 
       - name: Install Puppeteer and serve
         run: npm install puppeteer serve
 
-      - name: Generate PDF
-        run: node scripts/generate-pdf.js $PDF_NAME
+      - name: Generate PDFs (EN and ES)
+        run: node scripts/generate-pdf.js
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4

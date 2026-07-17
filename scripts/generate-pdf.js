@@ -7,17 +7,14 @@ const PORT = 3456;
 const BUILD_DIR = path.join(__dirname, '..', 'build');
 const OUTPUT_DIR = path.join(__dirname, '..', 'output');
 
-const fileName = process.argv[2] || 'AlbertMenendezCV.pdf';
-const OUTPUT_PDF = path.join(OUTPUT_DIR, fileName);
-
-async function generatePDF() {
+async function generatePDFForLang(lang, fileName) {
     let server;
+    const OUTPUT_PDF = path.join(OUTPUT_DIR, fileName);
 
     try {
-        fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-
         server = spawn('npx', ['serve', '-s', BUILD_DIR, '-l', PORT], {
             stdio: 'ignore',
+            env: { ...process.env, REACT_APP_LANG: lang }
         });
 
         await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -29,7 +26,7 @@ async function generatePDF() {
 
         const page = await browser.newPage();
 
-        await page.goto(`http://localhost:${PORT}`, {
+        await page.goto(`http://localhost:${PORT}?lang=${lang}`, {
             waitUntil: 'networkidle0',
         });
 
@@ -56,6 +53,20 @@ async function generatePDF() {
         if (server) {
             server.kill();
         }
+    }
+}
+
+async function generatePDF() {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+    
+    const lang = process.argv[2];
+    const fileName = process.argv[3];
+    
+    if (lang && fileName) {
+        await generatePDFForLang(lang, fileName);
+    } else {
+        await generatePDFForLang('en', 'AlbertMenendezCV_EN.pdf');
+        await generatePDFForLang('es', 'AlbertMenendezCV_ES.pdf');
     }
 }
 

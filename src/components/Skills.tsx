@@ -1,28 +1,32 @@
+import { useTranslation } from 'react-i18next';
+
 interface ISkillCategory {
-    category: string;
+    categoryKey: string;
     skills: string[];
 }
 
 const skillCategories: ISkillCategory[] = [
-    { category: "Backend", skills: ["Java", "SpringBoot", "Typescript", "NodeJS", "NestJs", "Python", "Go", "Php"] },
-    { category: "DevOps / Cloud", skills: ["Docker", "Kubernetes", "AWS", "Linux", "Terraform", "GitHub Actions", "GitLab CI"] },
-    { category: "AI", skills: ["Prompt", "Agents", "MCPs", "Skills", "Codex", "Claude", "OpenCode"] },
-    { category: "Frontend", skills: ["ReactJS", "NextJS", "TailwindCSS"] },
-    { category: "Architecture / Design", skills: ["Domain Driven Design", "Hexagonal Architecture", "Microservices", "Event Driven Architecture"] },
-    { category: "Databases", skills: ["SQL", "MySQL", "PostgresSql", "MongoDB", "Redis"] },
-    { category: "Testing", skills: ["JUnit", "Jest", "Mockito", "Cucumber", "Postman", "Swagger"] },
-    { category: "Tools", skills: ["Git", "GitLab", "GitHub", "Bitbucket", "Grafana", "Jira", "Trello", "RabbitMQ", "Kafka"] },
+    { categoryKey: "skills.categories.backend", skills: ["Java", "SpringBoot", "Typescript", "NodeJS", "NestJs", "Python", "Go", "Php"] },
+    { categoryKey: "skills.categories.devops", skills: ["Docker", "Kubernetes", "AWS", "Linux", "Terraform", "GitHub Actions", "GitLab CI"] },
+    { categoryKey: "skills.categories.ai", skills: ["Prompt", "Agents", "MCPs", "Skills", "Codex", "Claude", "OpenCode"] },
+    { categoryKey: "skills.categories.frontend", skills: ["ReactJS", "NextJS", "TailwindCSS"] },
+    { categoryKey: "skills.categories.architecture", skills: ["Domain Driven Design", "Hexagonal Architecture", "Microservices", "Event Driven Architecture"] },
+    { categoryKey: "skills.categories.databases", skills: ["SQL", "MySQL", "PostgresSql", "MongoDB", "Redis"] },
+    { categoryKey: "skills.categories.testing", skills: ["JUnit", "Jest", "Mockito", "Cucumber", "Postman", "Swagger"] },
+    { categoryKey: "skills.categories.tools", skills: ["Git", "GitLab", "GitHub", "Bitbucket", "Grafana", "Jira", "Trello", "RabbitMQ", "Kafka"] },
 ];
 
 const Skills = () => {
+    const { t } = useTranslation();
+    
     return (
         <div>
-            <h3 className="text-lg font-bold mb-3 uppercase tracking-wider">Skills</h3>
+            <h3 className="text-lg font-bold mb-3 uppercase tracking-wider">{t('skills.title')}</h3>
             <div className="flex flex-col space-y-2">
                 {
                     skillCategories.map((cat) => (
-                        <div key={cat.category}>
-                            <span className="font-semibold text-sm">{cat.category}: </span>
+                        <div key={cat.categoryKey}>
+                            <span className="font-semibold text-sm">{t(cat.categoryKey)}: </span>
                             <span className="text-sm text-gray-300">
                               {cat.skills.join(', ')}
                             </span>

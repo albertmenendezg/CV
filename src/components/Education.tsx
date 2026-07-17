@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {formatDate} from "../utils/format-date";
 
 interface IEducationItem {
@@ -24,24 +25,26 @@ const EducationItem = (props: IEducationItem) => {
 }
 
 const Education = () => {
+    const { t } = useTranslation();
+    
     return (
         <div>
-            <h2 className="text-xl font-bold mb-1">Education</h2>
+            <h2 className="text-xl font-bold mb-1">{t('education.title')}</h2>
             <div className="flex flex-col">
                 <EducationItem
-                    title="Multiplatform Application Development"
+                    title={t('education.degrees.multiplatform')}
                     institution="DigitechFp"
                     startDate={new Date("2025-10-01")}
                     endDate={new Date("2026-06-01")}
                 />
                 <EducationItem
-                    title="Devops & Cloud Program"
+                    title={t('education.degrees.devops')}
                     institution="UNIR"
                     startDate={new Date("2025-03-01")}
                     endDate={new Date("2025-10-01")}
                 />
                 <EducationItem
-                    title="Web Application Development"
+                    title={t('education.degrees.web')}
                     institution="Stucom"
                     startDate={new Date("2020-09-01")}
                     endDate={new Date("2022-06-01")}

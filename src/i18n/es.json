@@ -1,0 +1,77 @@
+{
+  "header": {
+    "title": "Albert Menéndez González",
+    "subtitle": "Ingeniero Backend y Cloud Senior",
+    "description": "Enfocado en construir soluciones fiables, seguras y escalables que encajen con el producto"
+  },
+  "contact": {
+    "title": "Contacto",
+    "location": "Barcelona, España"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "techStack": "Stack Tecnológico",
+    "present": "Presente",
+    "roles": {
+      "backendEngineer": "Ingeniero Backend",
+      "backendDeveloper": "Desarrollador Backend",
+      "fullstackDeveloper": "Desarrollador Fullstack"
+    },
+    "tasks": {
+      "nter1": "Diseñé y desarrollé un sistema escalable para validar automáticamente envíos de código, reduciendo el tiempo de corrección manual.",
+      "nter2": "Construí microservicios backend usando Java Spring Boot con comunicación asincrónica vía RabbitMQ.",
+      "nter3": "Orquestación de aplicaciones containerizadas usando Docker y Kubernetes",
+      "nter4": "Integración de pipelines CI/CD (GitLab) e infraestructura automatizada en AWS.",
+      "feeder1": "Desarrollé y mantuve APIs REST en una arquitectura de microservicios usando Spring Boot y NestJs comunicados con RabbitMQ.",
+      "feeder2": "Migración de monolito a microservicios, aplicando Arquitectura Hexagonal y DDD.",
+      "feeder3": "Diseñé y gestioné bases de datos relacionales y no relacionales (MySQL, PostgresSql, MongoDb, Redis).",
+      "feeder4": "Implementé pipelines CI/CD e infraestructura cloud en AWS.",
+      "foxize1": "Desarrollé y mantuve una plataforma SaaS de e-learning usando Symfony (PHP).",
+      "foxize2": "Apliqué principios SOLID y mejoré la mantenibilidad del código.",
+      "foxize3": "Desarrollo de funcionalidades frontend con HTML, CSS y JavaScript con plantillas twig"
+    }
+  },
+  "education": {
+    "title": "Formación Académica",
+    "degrees": {
+      "multiplatform": "Desarrollo de Aplicaciones Multiplataforma",
+      "devops": "Programa DevOps y Cloud",
+      "web": "Desarrollo de Aplicaciones Web"
+    }
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": "Español",
+    "catalan": "Catalán",
+    "english": "Inglés",
+    "native": "Nativo",
+    "professional": "B2 - Profesional"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "categories": {
+      "backend": "Backend",
+      "devops": "DevOps / Cloud",
+      "ai": "IA",
+      "frontend": "Frontend",
+      "architecture": "Arquitectura / Diseño",
+      "databases": "Bases de Datos",
+      "testing": "Testing",
+      "tools": "Herramientas"
+    }
+  },
+  "months": {
+    "jan": "Ene",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Abr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "ago": "Ago",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dic"
+  }
+}
