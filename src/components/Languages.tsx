@@ -9,8 +9,8 @@ const LanguageItem = (props: ILanguageItem) => {
     const { name, level } = props;
     return (
         <div className="flex justify-between items-center">
-            <h2 className="font-semibold text-sm">{name}</h2>
-            <h2 className="text-sm text-gray-300">{level}</h2>
+            <h2 className="font-semibold text-xs">{name}</h2>
+            <h2 className="text-[11px] text-gray-300">{level}</h2>
         </div>
     );
 }
@@ -19,8 +19,8 @@ const Languages = () => {
     
     return (
         <div>
-            <h3 className="text-lg font-bold mb-3 uppercase tracking-wider">{t('languages.title')}</h3>
-            <div className="flex flex-col space-y-2">
+            <h3 className="text-sm font-bold mb-2 uppercase tracking-wider">{t('languages.title')}</h3>
+            <div className="flex flex-col space-y-1">
                 <LanguageItem name={t('languages.spanish')} level={t('languages.native')} />
                 <LanguageItem name={t('languages.catalan')} level={t('languages.native')} />
                 <LanguageItem name={t('languages.english')} level={t('languages.professional')} />

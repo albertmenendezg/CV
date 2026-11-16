@@ -12,49 +12,49 @@ const App = () => {
     const { t } = useTranslation();
     
     return (
-        <main className="min-h-screen w-full flex">
-            <aside className="w-1/3 bg-secondary text-white p-4">
-                <div className="flex justify-center mb-4">
-                    <img src="profile_photo.jpg" alt="Albert Menéndez González" width="110" height="auto" className="rounded-full border-4 border-white" />
+        <main className="min-h-screen w-full flex text-[13px] leading-tight">
+            <aside className="w-[31%] bg-secondary text-white p-3">
+                <div className="flex justify-center mb-2">
+                    <img src="profile_photo.jpg" alt="Albert Menéndez González" width="90" height="auto" className="rounded-full border-2 border-white" />
                 </div>
                 
-                <div className="mb-4">
-                    <h3 className="text-lg font-bold mb-3 uppercase tracking-wider">{t('contact.title')}</h3>
-                    <div className="space-y-2 text-sm">
-                        <div className="flex items-center space-x-3">
+                <div className="mb-3">
+                    <h3 className="text-sm font-bold mb-2 uppercase tracking-wider">{t('contact.title')}</h3>
+                    <div className="space-y-1 text-xs">
+                        <div className="flex items-center space-x-2">
                             <IoMdMail className="text-gray-300"/>
-                            <a href="mailto:albertmenendezg@gmail.com" className="hover:text-gray-300">albertmenendezg@gmail.com</a>
+                            <a href="mailto:albertmenendezg@gmail.com" className="hover:text-gray-300 break-all">albertmenendezg@gmail.com</a>
                         </div>
-                        <div className="flex items-center space-x-3">
+                        <div className="flex items-center space-x-2">
                             <IoMdPhonePortrait className="text-gray-300"/>
                             <a href="tel:+34678630197" className="hover:text-gray-300">(+34) 678630197</a>
                         </div>
-                        <div className="flex items-center space-x-3">
+                        <div className="flex items-center space-x-2">
                             <FaLocationDot className="text-gray-300"/>
                             <p>{t('contact.location')}</p>
                         </div>
                     </div>
                 </div>
 
-                <hr className="border-gray-600 my-4" />
+                <hr className="border-gray-600 my-2" />
                 
                 <Languages />
                 
-                <hr className="border-gray-600 my-4" />
+                <hr className="border-gray-600 my-2" />
                 
                 <Skills />
             </aside>
             
-            <div className="w-2/3 bg-gray-50">
-                <div className="px-2 pt-1">
+            <div className="w-[69%] bg-gray-50">
+                <div className="px-2 pt-1 pb-1">
                     <Header />
                 </div>
                 <hr className="border-gray-300" />
-                <div className="px-2 pt-1">
+                <div className="px-2 py-1">
                     <Experience />
                 </div>
                 <hr className="border-gray-300" />
-                <div className="px-2 pt-1">
+                <div className="px-2 py-1">
                     <Education />
                 </div>
             </div>

@@ -18,17 +18,24 @@
       "fullstackDeveloper": "Fullstack Developer"
     },
     "tasks": {
-      "nter1": "Designed and developed a scalable system to automatically validate code submissions, reducing manual correction time.",
-      "nter2": "Built backend microservices using Java Spring Boot with asynchronous communication via RabbitMQ.",
-      "nter3": "Orchestration of containerized applications using Docker and Kubernetes",
-      "nter4": "Integrated CI/CD pipelines (GitLab) and automated infrastructure on AWS.",
-      "feeder1": "Developed and maintained REST APIs in a microservices architecture using Spring Boot and NestJs communicated with RabbitMQ.",
-      "feeder2": "Migration from monolith to microservices, applying Hexagonal Architecture and DDD.",
-      "feeder3": "Designed and managed relational and non-relational databases (MySQL, PostgresSql, MongoDb, Redis).",
-      "feeder4": "Implemented CI/CD pipelines and deployed cloud infrastructure on AWS.",
-      "foxize1": "Developed and maintained a SaaS e-learning platform using Symfony (PHP).",
-      "foxize2": "Applied SOLID principles and improved code maintainability.",
-      "foxize3": "Development of frontend functionalities with HTML, CSS, and JavaScript with twig templates"
+      "peoplePlanner1": "Developed event-driven and synchronous microservices with Spring Boot and Maven, applying hexagonal architecture and DDD for employee planning at Inditex.",
+      "peoplePlanner2": "Applied spec-driven development (SDD) with OpenSpec and AI agents as part of the workflow.",
+      "peoplePlanner3": "Monitored services and infrastructure with Grafana and queried databases across DEV, PRE, and PRO.",
+      "peoplePlanner4": "Reviewed/created PRs with GitHub Copilot and supported junior team members.",
+      "oysho1": "Led migration of legacy systems and internal Amiga (Inditex) components to React 19.",
+      "oysho2": "Developed a new UI/UX for the internal backoffice.",
+      "oysho3": "Implemented asset uploads (images, video, audio) with AI auto-descriptions and bidirectional WebSocket communication.",
+      "codebench1": "Built a scalable system to automatically validate code submissions, reducing manual correction time.",
+      "codebench2": "Developed backend microservices with Java Spring Boot and asynchronous communication via RabbitMQ.",
+      "codebench4": "Orchestrated containerized services with Docker/Kubernetes and automated CI/CD on AWS and GitLab.",
+      "feederHealth1": "Built a NestJS backend with RabbitMQ to process facial micro-expression analysis data asynchronously.",
+      "feederHealth2": "Implemented real-time dashboards with WebSockets and Socket.io for live patient tracking.",
+      "feederHealth3": "Developed a Chrome extension for video consultations and deployed the platform on AWS.",
+      "feederMetrics1": "Developed REST APIs in a microservices architecture (Spring Boot/NestJS) with RabbitMQ.",
+      "feederMetrics2": "Migrated from monolith to microservices applying Hexagonal Architecture and DDD.",
+      "feederMetrics3": "Managed MySQL, PostgreSQL, MongoDB, and Redis; implemented CI/CD and AWS infrastructure.",
+      "foxize1": "Developed and maintained a SaaS e-learning platform using Symfony (PHP) with SOLID principles.",
+      "foxize2": "Built frontend features with HTML, CSS, JavaScript, and Twig templates."
     }
   },
   "education": {
