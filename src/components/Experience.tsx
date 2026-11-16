@@ -82,7 +82,7 @@ const Experience = () => {
                 t('experience.tasks.peoplePlanner3'),
                 t('experience.tasks.peoplePlanner4'),
               ],
-              techStack: ['Java', 'Spring Boot', 'Maven', 'RabbitMQ', 'PostgreSQL', 'Microsoft Azure', 'Grafana', 'SQL', 'OpenSpec', 'GitHub Copilot'],
+              techStack: ['Java', 'Spring Boot', 'Maven', 'RabbitMQ', 'PostgreSQL', 'Microsoft Azure', 'Grafana', 'SQL', 'OpenSpec', 'GitHub Copilot', 'Opencode'],
             },
             {
               name: 'Oysho Backoffice',
