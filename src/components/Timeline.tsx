@@ -26,9 +26,9 @@ interface IEntry {
 }
 
 export const TimelineEntry = ({ period, children }: IEntry) => (
-  <div className="relative grid grid-cols-[78px_1fr] gap-2 avoid-break">
+  <div className="relative grid grid-cols-[96px_1fr] gap-2 avoid-break">
     <span className="absolute -left-[26px] top-[4px] w-[7px] h-[7px] rounded-full bg-slate-500" />
-    <p className="text-[10px] text-gray-500 leading-tight pt-[1px]">{period}</p>
+    <p className="text-[9.5px] text-gray-500 leading-tight pt-[2px] whitespace-nowrap">{period}</p>
     <div>{children}</div>
   </div>
 );

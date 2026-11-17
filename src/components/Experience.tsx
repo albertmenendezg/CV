@@ -21,9 +21,10 @@ interface IExperienceGroup {
 
 const ExperienceGroup = ({ role, company, startDate, endDate, projects }: IExperienceGroup) => {
   const { t } = useTranslation();
+  const companyPeriod = `${formatDate(startDate)} - ${formatDate(endDate)}`;
 
   return (
-    <TimelineEntry period={`${formatDate(startDate)} - ${formatDate(endDate)}`}>
+    <TimelineEntry period={companyPeriod}>
       <h3 className="text-[12px] leading-tight mb-1">
         <span className="font-bold text-secondary">{role}</span>
         <span className="text-gray-400 mx-1.5">·</span>
@@ -31,13 +32,15 @@ const ExperienceGroup = ({ role, company, startDate, endDate, projects }: IExper
       </h3>
 
       <div className="space-y-1.5">
-        {projects.map((project) => (
+        {projects.map((project) => {
+          const projectPeriod = `${formatDate(project.startDate)} - ${formatDate(project.endDate)}`;
+          return (
           <div key={project.name} className="avoid-break ml-1.5 pl-2.5 border-l-2 border-slate-300">
             <div className="flex flex-row justify-between items-baseline gap-2">
               <p className="font-semibold text-[11px] text-secondary">{project.name}</p>
-              <p className="text-gray-500 text-[9.5px] whitespace-nowrap">
-                {formatDate(project.startDate)} - {formatDate(project.endDate)}
-              </p>
+              {projectPeriod !== companyPeriod && (
+                <p className="text-gray-500 text-[9.5px] whitespace-nowrap">{projectPeriod}</p>
+              )}
             </div>
             <ul className="list-disc ml-4">
               {project.tasks.map((task) => (
@@ -50,7 +53,8 @@ const ExperienceGroup = ({ role, company, startDate, endDate, projects }: IExper
               <span className="font-semibold">{t('experience.techStack')}:</span> {project.techStack.join(', ')}
             </p>
           </div>
-        ))}
+          );
+        })}
       </div>
     </TimelineEntry>
   );
