@@ -1,32 +1,25 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SidebarSection from './SidebarSection';
 
-interface ILanguageItem {
-    name: string;
-    level: string
-}
-const LanguageItem = (props: ILanguageItem) => {
-    const { name, level } = props;
-    return (
-        <div className="flex justify-between items-center">
-            <h2 className="font-semibold text-xs">{name}</h2>
-            <h2 className="text-[11px] text-gray-300">{level}</h2>
-        </div>
-    );
-}
+const LanguageItem = ({ name, level }: { name: string; level: string }) => (
+  <div className="flex justify-between items-center text-[11px]">
+    <span className="font-semibold text-white">{name}</span>
+    <span className="text-gray-200">{level}</span>
+  </div>
+);
+
 const Languages = () => {
-    const { t } = useTranslation();
-    
-    return (
-        <div>
-            <h3 className="text-sm font-bold mb-2 uppercase tracking-wider">{t('languages.title')}</h3>
-            <div className="flex flex-col space-y-1">
-                <LanguageItem name={t('languages.spanish')} level={t('languages.native')} />
-                <LanguageItem name={t('languages.catalan')} level={t('languages.native')} />
-                <LanguageItem name={t('languages.english')} level={t('languages.professional')} />
-            </div>
-        </div>
-    );
+  const { t } = useTranslation();
+
+  return (
+    <SidebarSection title={t('languages.title')}>
+      <div className="space-y-1">
+        <LanguageItem name={t('languages.spanish')} level={t('languages.native')} />
+        <LanguageItem name={t('languages.catalan')} level={t('languages.native')} />
+        <LanguageItem name={t('languages.english')} level={t('languages.professional')} />
+      </div>
+    </SidebarSection>
+  );
 };
 
 export default Languages;

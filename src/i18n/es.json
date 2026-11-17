@@ -1,12 +1,18 @@
 {
   "header": {
     "title": "Albert Menéndez González",
-    "subtitle": "Ingeniero Backend y Cloud Senior",
-    "description": "Enfocado en construir soluciones fiables, seguras y escalables que encajen con el producto"
+    "subtitle": "Ingeniero Backend, IA y Cloud"
   },
   "contact": {
     "title": "Contacto",
+    "email": "Email",
+    "phone": "Teléfono",
+    "locationLabel": "Ubicación",
     "location": "Barcelona, España"
+  },
+  "summary": {
+    "title": "Perfil Profesional",
+    "text": "Ingeniero Backend con experiencia en microservicios escalables y soluciones cloud-native con Java, Spring Boot, Node.js/NestJS y React. Experiencia en arquitecturas orientadas a eventos, APIs REST, CI/CD, Docker, Kubernetes, AWS/Azure, PostgreSQL, DDD, arquitectura hexagonal e integración de flujos de IA/agentes."
   },
   "experience": {
     "title": "Experiencia",
@@ -18,13 +24,13 @@
       "fullstackDeveloper": "Desarrollador Fullstack"
     },
     "tasks": {
-      "peoplePlanner1": "Desarrollé microservicios orientados a eventos y síncronos con Spring Boot y Maven, aplicando arquitectura hexagonal y DDD para la planificación en Inditex.",
+      "peoplePlanner1": "Desarrollé microservicios síncronos y orientados a eventos con Spring Boot y Maven, aplicando arquitectura hexagonal y DDD.",
       "peoplePlanner2": "Apliqué desarrollo guiado por especificaciones (SDD) con OpenSpec y agentes de IA en el flujo de trabajo.",
-      "peoplePlanner3": "Monitoricé servicios e infraestructura con Grafana y realicé consultas a BBDD en DEV, PRE y PRO.",
+      "peoplePlanner3": "Monitoricé servicios con Grafana y consulté BBDD en DEV, PRE y PRO.",
       "peoplePlanner4": "Revisé/creé PRs con GitHub Copilot y acompañé a perfiles junior del equipo.",
       "oysho1": "Lideré la migración de sistemas legacy y componentes internos de Amiga (Inditex) a React 19.",
       "oysho2": "Desarrollé una nueva UI/UX para el backoffice interno.",
-      "oysho3": "Implementé subida de assets (imágenes, vídeo, audio) con autodescripciones de IA y comunicación bidireccional por WebSockets.",
+      "oysho3": "Implementé subida de assets (imagen, vídeo, audio) con autodescripciones por IA vía WebSockets.",
       "codebench1": "Construí un sistema escalable para validar automáticamente envíos de código, reduciendo la corrección manual.",
       "codebench2": "Desarrollé microservicios backend con Java Spring Boot y comunicación asíncrona vía RabbitMQ.",
       "codebench4": "Orquesté servicios containerizados con Docker/Kubernetes y automaticé CI/CD en AWS y GitLab.",
@@ -39,7 +45,7 @@
     }
   },
   "education": {
-    "title": "Formación Académica",
+    "title": "Educación",
     "degrees": {
       "multiplatform": "Desarrollo de Aplicaciones Multiplataforma",
       "devops": "Programa DevOps y Cloud",
@@ -61,7 +67,7 @@
       "devops": "DevOps / Cloud",
       "ai": "IA",
       "frontend": "Frontend",
-      "architecture": "Arquitectura / Diseño",
+      "architecture": "Arquitectura y Diseño",
       "databases": "Bases de Datos",
       "testing": "Testing",
       "tools": "Herramientas"

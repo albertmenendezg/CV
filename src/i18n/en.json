@@ -1,12 +1,18 @@
 {
   "header": {
     "title": "Albert Menéndez González",
-    "subtitle": "Senior Backend and Cloud Engineer",
-    "description": "Focused on building reliable, secure and scalable and product-fit solutions"
+    "subtitle": "Backend, AI & Cloud Engineer"
   },
   "contact": {
     "title": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "locationLabel": "Location",
     "location": "Barcelona, Spain"
+  },
+  "summary": {
+    "title": "Professional Summary",
+    "text": "Backend Engineer experienced in scalable microservices and cloud-native solutions with Java, Spring Boot, Node.js/NestJS, and React. Skilled in event-driven architectures, REST APIs, CI/CD, Docker, Kubernetes, AWS/Azure, PostgreSQL, DDD, hexagonal architecture, and AI/agentic workflows."
   },
   "experience": {
     "title": "Experience",
@@ -61,7 +67,7 @@
       "devops": "DevOps / Cloud",
       "ai": "AI",
       "frontend": "Frontend",
-      "architecture": "Architecture / Design",
+      "architecture": "Architecture & Design",
       "databases": "Databases",
       "testing": "Testing",
       "tools": "Tools"

@@ -1,18 +1,17 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
-    const { t } = useTranslation();
-    
-    return (
-        <header className="mb-1">
-            <div>
-                <h1 className="text-2xl font-bold mb-0.5 leading-tight">{t('header.title')}</h1>
-                <h2 className="text-sm text-primary mb-0.5">{t('header.subtitle')}</h2>
-                <p className="text-primary text-xs leading-snug">{t('header.description')}</p>
-            </div>
-        </header>
-    );
+  const { t } = useTranslation();
+
+  return (
+    <header className="mb-3">
+      <h1 className="text-[25px] font-semibold uppercase tracking-[0.14em] whitespace-nowrap leading-tight text-secondary">
+        {t('header.title')}
+      </h1>
+      <h2 className="text-[13px] font-medium text-gray-600 mt-0.5 mb-2">{t('header.subtitle')}</h2>
+      <p className="text-[10.5px] text-primary leading-snug text-justify">{t('summary.text')}</p>
+    </header>
+  );
 };
 
 export default Header;
